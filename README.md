@@ -7,6 +7,7 @@
   <img src="https://img.shields.io/badge/status-active-brightgreen" />
   <img src="https://img.shields.io/badge/python-3.9+-blue" />
   <img src="https://img.shields.io/badge/Telegram-Bot-blue?logo=telegram" />
+  <img src="https://img.shields.io/badge/JSON-helper-lightgrey" alt="json" />
   <img src="https://img.shields.io/badge/QA-friendly-orange" />
 </p>
 
