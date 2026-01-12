@@ -4,6 +4,7 @@ from aiogram.types import Message
 from aiogram.fsm.context import FSMContext
 import logging
 from messages import WELCOME_MSG, MENU_MSG, HELP_MSG, get_main_menu, get_back_menu
+from config import Config
 
 logger = logging.getLogger(__name__)
 
@@ -471,3 +472,28 @@ class CommandRouter:
         except Exception as e:
             logger.error(f"Ошибка регистрации обработчиков: {e}", exc_info=True)
             raise
+
+
+
+# AI Model Selection (NEW!)
+async def ask_for_ai_model(message: Message) -> str:
+    """Ask user to select AI model"""
+    keyboard = ReplyKeyboardMarkup(
+        keyboard=[
+            [KeyboardButton(text="🔴 OpenAI GPT")],
+            [KeyboardButton(text="⚫ Claude")],
+            [KeyboardButton(text="🟦 DeepSeek")],
+            [KeyboardButton(text="❌ No AI")]
+        ],
+        resize_keyboard=True
+    )
+    
+    await message.answer(
+        "🤖 <b>Choose AI assistant for help:</b>\n\n"
+        "🔴 <b>OpenAI GPT</b> - Fast and powerful\n"
+        "⚫ <b>Claude</b> - Detailed analysis\n"
+        "🟦 <b>DeepSeek</b> - Quick answers\n"
+        "❌ <b>No AI</b> - Standard mode",
+        reply_markup=keyboard,
+        parse_mode="HTML"
+    )
