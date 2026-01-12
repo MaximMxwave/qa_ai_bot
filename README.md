@@ -120,7 +120,7 @@ qa_ai_bot/
 └── requirements.txt            # Зависимости
 ```
 
-## 🔗 Ссылка на бота
+### 🔗 Ссылка на бота
 
 [t.me/QA_AI_AssistantBot](https://t.me/QA_AI_AssistantBot)
 
@@ -132,8 +132,10 @@ qa_ai_bot/
 * 🎨 Интуитивное меню с кнопками
 * 🤖 Интеграция с несколькими AI-моделями
 
-## 👨‍💻 Разработчик
+**👨‍💻 Разработал:**
 
 Максим Олесов ([@Mxwave](https://t.me/Mxwave))
 
-![Made by Maxim Olesov](https://img.shields.io/badge/Made%20by-Maxim%20Olesov-blue?style=for-the-badge&logo=github)
+<p align="left">
+  <img src="https://img.shields.io/badge/Made%20by-Maxim%20Olesov-blue?style=for-the-badge&logo=github" alt="Made by Maxim Olesov" />
+</p>
