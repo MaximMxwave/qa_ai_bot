@@ -4,6 +4,10 @@ from aiogram.fsm.state import State, StatesGroup
 import logging
 import html
 from messages import MENU_MSG, get_main_menu, get_back_menu
+try:
+    from ai_service import ai_service
+except ImportError:
+    ai_service = None
 
 logger = logging.getLogger(__name__)
 
@@ -307,3 +311,28 @@ async def handle_choice(message: Message, state: FSMContext):
     else:
         await message.answer("Пожалуйста, используй кнопки")
 
+
+
+
+# AI Integration Functions
+async def generate_test_case_with_ai(message: Message, state: FSMContext, ai_model: str = "openai"):
+    """Generate test case from feature description using AI"""
+    if not ai_service:
+        await message.answer("❌ AI service not available", reply_markup=get_main_menu())
+        return
+    
+    try:
+        data = await state.get_data()
+        feature_desc = data.get('title', '') + '\n' + data.get('description', '')
+        
+        await message.answer("⏳ Generating test case with AI...", parse_mode="HTML")
+        
+        generated = ai_service.generate_test_case(feature_desc, ai_model)
+        
+        await message.answer(
+            f"✨ <b>AI-Generated Test Case ({ai_model.upper()}):</b>\n\n{generated}",
+            parse_mode="HTML"
+        )
+    except Exception as e:
+        logger.error(f"AI test case generation error: {e}", exc_info=True)
+        await message.answer(f"❌ Error generating test case: {str(e)}")
