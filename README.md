@@ -120,13 +120,13 @@ python main.py
 ```
 qa_ai_bot/
 ├── plugins/                    # Директория с плагинами
-│   ├── bug_report_creator.py   # Генератор баг-репортов
-│   ├── file_generator.py       # Генератор файлов
-│   ├── json_validator.py       # Валидатор JSON
-│   ├── pairwise_tester.py      # Генератор Pairwise тестов
-│   ├── payment_generator.py    # Генератор платежных данных
-│   ├── test_case_template.py   # Шаблон тест-кейса
-│   └── test_data_generator.py  # Генератор тестовых данных
+│   ├── bug_report_creator.py   # Создание баг-репортов
+│   ├── file_generator.py       # Создание файлов
+│   ├── json_validator.py       # Проверить JSON
+│   ├── pairwise_tester.py      # Создание Pairwise тестов
+│   ├── payment_generator.py    # Создание платежных данных
+│   ├── test_case_template.py   # Создание тест-кейса
+│   └── test_data_generator.py  # Создание тестовых данных
 ├── config.py                   # Конфигурация
 ├── handlers.py                 # Обработчики команд
 ├── main.py                     # Основной файл бота
