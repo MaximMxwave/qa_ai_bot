@@ -153,6 +153,7 @@ python main.py
 
 ```
 qa_ai_bot/
+├── logs/                       # Директория для логов
 ├── plugins/                    # Директория с плагинами
 │   ├── bug_report_creator.py   # Создание баг-репортов
 │   ├── file_generator.py       # Создание файлов
@@ -162,6 +163,7 @@ qa_ai_bot/
 │   ├── test_case_template.py   # Создание тест-кейса
 │   └── test_data_generator.py  # Создание тестовых данных
 ├── ai_service.py               # Сервис для работы с AI-моделями
+├── .env                        # Админ и токены
 ├── config.py                   # Конфигурация
 ├── handlers.py                 # Обработчики команд
 ├── main.py                     # Основной файл бота
