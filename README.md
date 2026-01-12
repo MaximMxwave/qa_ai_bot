@@ -1,8 +1,14 @@
-# 🤖 QA Ai AssistantBot
+<h1 align="center">🤖 QA Ai AssistantBot</h1>
+<h3 align="center">
+  Telegram бот для автоматизации рутинных задач QA с поддержкой AI-ассистентов
+</h3>
 
-### Telegram бот для автоматизации рутинных задач QA с поддержкой AI-ассистентов
-
-![status](https://img.shields.io/badge/status-active-brightgreen) ![python](https://img.shields.io/badge/python-3.9+-blue) ![telegram](https://img.shields.io/badge/Telegram-Bot-blue?logo=telegram) ![qa](https://img.shields.io/badge/QA-friendly-orange)
+<p align="center">
+  <img src="https://img.shields.io/badge/status-active-brightgreen" />
+  <img src="https://img.shields.io/badge/python-3.9+-blue" />
+  <img src="https://img.shields.io/badge/Telegram-Bot-blue?logo=telegram" />
+  <img src="https://img.shields.io/badge/QA-friendly-orange" />
+</p>
 
 ## 🎯 Возможности
 
