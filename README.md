@@ -98,8 +98,10 @@ cd qa_ai_bot
 ```
 
 2. **Создайте Telegram-бота через [@BotFather](https://t.me/BotFather)**
-3. *   **Скопируйте .env.example в .env**
-   *   ```bash
+
+3. **Скопируйте .env.example в .env**
+
+```bash
 cp .env.example .env
 ```
 
@@ -112,18 +114,18 @@ ANTHROPIC_API_KEY=ваш_ключ_anthropic
 DEEPSEEK_API_KEY=ваш_ключ_deepseek
 ```
 
-4. **Установите зависимости**
+5. **Установите зависимости**
 ```bash
 pip install -r requirements.txt
-*   **Выберите AI модель**
-По умолчанию используется **OpenAI** (gpt-3.5-turbo)  
-Вы можете изменить предпочтительную AI-модель в .env файле:
-```bash
-DEFAULT_AI_MODEL=openai     # openai, claude, deepseek
-```
 ```
 
-5. **Запустите бота**
+6. **Выберите AI модель, по умолчанию используется OpenAI (gpt-3.5-turbo),
+вы можете изменить AI-модель в .env файле**
+```bash
+DEFAULT_AI_MODEL=openai # openai, claude, deepseek
+```
+
+7. **Запустите бота**
 ```bash
 python main.py
 ```
