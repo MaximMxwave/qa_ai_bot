@@ -103,18 +103,23 @@
 * 🏗️ Модульная архитектура с плагинами
 * 🔄 Асинхронная обработка запросов
 * 📊 Логирование всех событий
-* 🎨 Интуитивное меню с кнопками
+* 📱 Интуитивное меню с кнопками
 * 🤖 Интеграция с несколькими AI-моделями
 
 ## 🛠 Стек технологий
 
-* 🐍 **Python 3.9+**
+* 🐍 [Python 3.9+](https://www.python.org/) - язык программирования
+* 🌐 [aiohttp](https://docs.aiohttp.org/) - асинхронные HTTP запросы
 * 📦 [Aiogram](https://docs.aiogram.dev/) - асинхронный фреймворк для Telegram Bot API
-* 🔐 [python-dotenv](https://pypi.org/project/python-dotenv/) - лоадинг переменных окружения из файла .env
+* 🧪 [AllPairsPy](https://github.com/thombashi/allpairspy) - комбинаторное тестирование
+* 🔐 [python-dotenv](https://pypi.org/project/python-dotenv/) - загрузка переменных окружения из файла `.env`
+* 🖼 [Pillow](https://python-pillow.org/) - работа с изображениями
 * 🎲 [Faker](https://pypi.org/project/Faker/) - генерация тестовых данных
-* 🤖 [OpenAI API](https://platform.openai.com/)
-* 🧠 [Anthropic API](https://www.anthropic.com/)
-* 🚀 [DeepSeek API](https://www.deepseek.com/)
+* 📋 [PyYAML](https://pyyaml.org/), [xmltodict](https://github.com/martinblech/xmltodict), [lxml](https://lxml.de/) - парсинг и обработка YAML, XML, HTML
+* 📄 [python-docx](https://python-docx.readthedocs.io/) (`.docx`), [openpyxl](https://openpyxl.readthedocs.io/) (`.xlsx`), [reportlab](https://www.reportlab.com/) (`.pdf`) - экспорт документации
+* 🤖 [OpenAI API](https://platform.openai.com/) - интеграция моделей GPT
+* 🧠 [Anthropic Claude API](https://www.anthropic.com/) - использование Claude
+* 🐋 [DeepSeek API](https://www.deepseek.com/) - работа с моделями DeepSeek
 
 ## 🚀 Как запустить проект
 
