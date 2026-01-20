@@ -1,4 +1,4 @@
-<h1 align="center">🤖 QA Ai AssistantBot</h1>
+<h1 align="center">🤖 QA AI AssistantBot</h1>
 <h3 align="center">
   Telegram бот для автоматизации рутинных задач QA с поддержкой AI-ассистентов
 </h3>
@@ -186,7 +186,7 @@ qa_ai_bot/
 
 ### 🔗 Ссылка на бота
 
-[t.me/QA_Ai_AssistantBot](https://t.me/QA_Ai_AssistantBot)
+[t.me/QA_AI_AssistantBot](https://t.me/QA_AI_AssistantBot)
 
 **👨‍💻 Разработал:**
 
